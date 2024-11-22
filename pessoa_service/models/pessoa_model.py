@@ -29,7 +29,6 @@ def listar_alunos():
     return alunos
 
 def leciona(id_professor, id_disciplina):
-    """Verifica se um professor leciona uma disciplina específica."""
     for disciplina in disciplinas:
         if disciplina['id_disciplina'] == id_disciplina:
             return id_professor in disciplina['professores']
